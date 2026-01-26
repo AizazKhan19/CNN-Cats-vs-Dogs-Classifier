@@ -31,4 +31,5 @@ def train_val_dataset_preparation():
 
 # creating training and validation datasets
 
-training_dataset, validation_dataset = train_val_dataset_preparation()
+if __name__ == "__main__":
+    training_dataset, validation_dataset = train_val_dataset_preparation()
