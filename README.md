@@ -7,7 +7,7 @@ The model has been implemented using **TensorFlow** and trained on **25,000 imag
 ---
 
 ## Dataset
-- **Source:** Kaggle `PetImages` dataset  
+- **Source:** Kaggle `dogs-vs-cats` dataset  
 - **Total images:** 25,000 (cats and dogs)  
 - **Training dataset:** 22,500 images  
 - **Validation dataset:** 2,500 images  
