@@ -1,5 +1,6 @@
 # Cats vs Dogs Binary Classification Model
-(catvsdog.png)
+![Project Thumbnail](catvsdog.jpg)
+
 
 
 ## Overview
