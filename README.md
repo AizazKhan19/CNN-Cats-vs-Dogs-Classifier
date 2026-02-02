@@ -1,4 +1,6 @@
 # Cats vs Dogs Binary Classification Model
+(catvsdog.png)
+
 
 ## Overview
 This repository contains a **Convolutional Neural Network (CNN)** model for **binary classification** of cat and dog images.  
