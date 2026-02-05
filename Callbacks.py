@@ -6,11 +6,11 @@ model= create_and_compile_model()
 class Earlystoppingcallback (tf.keras.callbacks.Callback):
     # defining the function
     def on_epoch_end(self, epochs, logs=None):
-        # acc >= 90% and val_acc>=90%
+        # acc >= 80% and val_acc>=80%
 
-        if logs['accuracy'] >= 0.90 and logs['val_accuracy'] >= 0.90:
+        if logs['accuracy'] >= 0.80 and logs['val_accuracy'] >= 0.80:
             self.model.stop_training = True
-            print("Training stopped because our critera is met")
+            print("\nTraining stopped because our critera is met")
 
 
 if __name__ == "__main__":
