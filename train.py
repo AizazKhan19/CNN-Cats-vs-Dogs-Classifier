@@ -18,6 +18,9 @@ def training_model():
         callbacks= [Earlystoppingcallback()]
     )
 
+    model.save('Augmented_model_cat_dog_classifier.keras')
+    print('Model saved successfully')
+
 
 if __name__ == '__main__':
     training_model()
