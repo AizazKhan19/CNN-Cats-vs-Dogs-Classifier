@@ -7,7 +7,7 @@ def augmentation_model():
         # adding augmentaion layers
 
         # input layer
-        tf.keras.layers.Input(shape=(150, 150, 3)),
+        tf.keras.layers.Input(shape=(120, 120, 3)),
 
         #Random Flip layer
         tf.keras.layers.RandomFlip('horizontal'),
