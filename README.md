@@ -66,7 +66,7 @@ All code is implemented in **TensorFlow**.
 ![Training validation Accuracy Graph](train_val_acc.png)
 
 
-## Training and Validation Accuracy Graph
+## Training and Validation Loss Graph
 ![Training validation Loss Graph.png](train_val_loss.png)
 
 ---
