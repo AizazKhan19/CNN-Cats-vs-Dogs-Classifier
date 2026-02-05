@@ -58,8 +58,16 @@ The training is executed with the following pipeline:
 
 All code is implemented in **TensorFlow**.
 
+## Training Logs
+![Training Logs](aug_model_train_logs.png)
+
+
 ## Training and Validation Accuracy Graph
-![Training and validation accuracy graph](training and validation accuray graph.png)
+![Training validation Accuracy Graph](train_val_acc.png)
+
+
+## Training and Validation Accuracy Graph
+![Training validation Loss Graph.png](train_val_loss.png)
 
 ---
 
@@ -77,3 +85,6 @@ The dataset used for training and validation is from the Kaggle competition:
 [Dogs vs Cats](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 - **Framework:** TensorFlow 2.x  
 - **GPU Resources:** Colab T4 GPU
+
+
+[def]: tr
