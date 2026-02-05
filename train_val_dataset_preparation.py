@@ -7,7 +7,7 @@ def train_val_dataset_preparation():
 
     training_dataset = tf.keras.utils.image_dataset_from_directory(
         directory = './data/Petimages',  
-        image_size = (150, 150),
+        image_size = (120, 120),
         batch_size = (128),
         label_mode = 'binary',
         validation_split = 0.15,
