@@ -1,12 +1,18 @@
 import tensorflow as tf
+from Creating_augmentation_model import augmentation_model
+
+augmented_model =  augmentation_model()
 
 # creating a model with 3 convolution layer
 
 def create_and_compile_model():
-    model = tf.keras.models.Sequential([
+    augmentation_layers_model = tf.keras.models.Sequential([
 
         # Input layer
-        tf.keras.layers.Input(shape=(150, 150, 3)),
+        tf.keras.layers.Input(shape=(120, 120, 3)),
+
+        # Adding Augmentation model
+        augmented_model,
 
         # Rescaling layer to normalize the pixel values
         tf.keras.layers.Rescaling(1./255),
