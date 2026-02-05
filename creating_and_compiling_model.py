@@ -42,13 +42,13 @@ def create_and_compile_model():
         tf.keras.layers.Dense(1, activation= 'sigmoid')
     ])
 
-    model.compile(
+    augmentation_layers_model.compile(
         optimizer = 'adam',
         loss = 'binary_crossentropy',
         metrics = ['accuracy']
     )
 
-    return model
+    return augmentation_layers_model
 
 if __name__ =="__main__":
     model = create_and_compile_model()
