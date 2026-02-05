@@ -10,7 +10,7 @@ def train_val_dataset_preparation():
         image_size = (150, 150),
         batch_size = (128),
         label_mode = 'binary',
-        validation_split = 0.1,
+        validation_split = 0.15,
         subset = 'training',
         seed = 42
 
@@ -21,7 +21,7 @@ def train_val_dataset_preparation():
         image_size = (150, 150),
         batch_size = (128),
         label_mode = 'binary',
-        validation_split = 0.1,
+        validation_split = 0.15,
         subset = 'validation',
         seed = 42
     )
