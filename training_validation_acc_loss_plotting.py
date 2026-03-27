@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Path to the history.json file
-history_file = os.path.join('Training History', 'history.json')
+history_file = os.path.join('Training History', 'training_history.json')
 
 # Load the history JSON
 with open(history_file, 'r') as f:

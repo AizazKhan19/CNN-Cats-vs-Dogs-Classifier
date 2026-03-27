@@ -12,9 +12,9 @@ The model has been implemented using **TensorFlow** and trained on **25,000 imag
 ## Dataset
 - **Source:** Kaggle `dogs-vs-cats` dataset  
 - **Total images:** 25,000 (cats and dogs)  
-- **Training dataset:** 22,500 images  
-- **Validation dataset:** 2,500 images  
-- **Image size:** 150 x 150 pixels  
+- **Training dataset:** 21,250 images  
+- **Validation dataset:** 3,750 images  
+- **Image size:** 120 x 120 pixels  
 - **Batch size:** 128  
 - **Label mode:** Binary (0 = cat, 1 = dog)
 
@@ -44,7 +44,7 @@ The model has been designed as a **CNN with 3 convolutional layers**:
 
 ## Training Details
 - **Environment:** Google Colab with **T4 GPU**  
-- **Epochs:** 15  
+- **Epochs:** 35  
 - **Early Stopping:** Implemented using custom callback
   - Stops training if **training accuracy ≥ 80%** and **validation accuracy ≥ 80%**  
   - Uses **on_epoch_end** method to monitor metrics  
@@ -57,6 +57,17 @@ The training is executed with the following pipeline:
 3. Train the model using `model.fit` with early stopping callback  
 
 All code is implemented in **TensorFlow**.
+
+## Training Logs
+![Training Logs](aug_model_train_logs.png)
+
+
+## Training and Validation Accuracy Graph
+![Training validation Accuracy Graph](train_val_acc.png)
+
+
+## Training and Validation Loss Graph
+![Training validation Loss Graph.png](train_val_loss.png)
 
 ---
 
@@ -74,3 +85,6 @@ The dataset used for training and validation is from the Kaggle competition:
 [Dogs vs Cats](https://www.kaggle.com/competitions/dogs-vs-cats/data)
 - **Framework:** TensorFlow 2.x  
 - **GPU Resources:** Colab T4 GPU
+
+
+[def]: tr

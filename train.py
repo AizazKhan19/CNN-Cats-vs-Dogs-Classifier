@@ -13,10 +13,13 @@ model= create_and_compile_model()
 def training_model():
     history = model.fit(
         training_dataset,
-        epochs = 15,
+        epochs = 35,
         validation_data= validation_dataset,
         callbacks= [Earlystoppingcallback()]
     )
+
+    model.save('Augmented_model_cat_dog_classifier.keras')
+    print('Model saved successfully')
 
 
 if __name__ == '__main__':
